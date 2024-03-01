@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   display: flex;
   align-self: start;
@@ -13,4 +17,122 @@ button {
 
 .header {
   background-color: green;
+}
+
+@media only screen and (max-width: 576px) {
+  header .heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  header .heading .menu div {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #c4c4c4;
+  }
+  main .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .group_task {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 30px;
+  }
+  main .group_task .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(229, 225, 225, 0.2509803922);
+    padding: 25px 20px;
+    gap: 15px;
+    border-radius: 12px;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  main .group_task .detail p {
+    text-align: center;
+  }
+  main .group_task .detail .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+    width: 77px;
+    height: 32px;
+    background-color: #000;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    cursor: pointer;
+  }
+  footer hr {
+    border-color: #e0e0e0;
+    opacity: 0.5;
+  }
+  footer .footer_menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 0px 20px;
+  }
+  footer .footer_menu a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  header .heading .menu div {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #c4c4c4;
+  }
+  header ul {
+    width: 268px;
+    margin: 0;
+    background-color: #d0d0d0;
+    border-radius: 0px 8px 8px 0px;
+  }
+  header ul li {
+    padding: 17px;
+    font-weight: bold;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+  }
+  main .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-image: url(/assets/images/img_wrkt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75%;
+    height: 80vh;
+    border-radius: 16px;
+  }
+  main .content .subtitle {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 16px 16px;
+    padding: 20px;
+    background-color: rgba(208, 208, 208, 0.8980392157);
+    width: 100%;
+    color: #fff;
+  }
+  main .content .subtitle p {
+    font-weight: bold;
+    padding: 5px 0px;
+  }
 }/*# sourceMappingURL=main.css.map */

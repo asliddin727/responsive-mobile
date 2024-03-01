@@ -1,0 +1,58 @@
+@media only screen and (max-width: 576px) {
+  header {
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px;
+      .menu {
+        div {
+          width: 48px;
+          height: 48px;
+          border-radius: 12px;
+          background-color: #c4c4c4;
+        }
+      }
+    }
+    ul {
+      width: 268px;
+      margin: 0;
+      background-color: #d0d0d0;
+      border-radius: 0px 8px 8px 0px;
+      li {
+        padding: 17px;
+        font-weight: bold;
+      }
+    }
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      background-image: url(/assets/images/img_wrkt.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 75%;
+      height: 80vh;
+      border-radius: 16px;
+      .subtitle {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px 0px 16px 16px;
+        padding: 20px;
+        background-color: #d0d0d0e5;
+        width: 100%;
+        // margin-top: 400px;
+        color: #fff;
+        p {
+          font-weight: bold;
+          padding: 5px 0px;
+        }
+      }
+    }
+  }
+}
